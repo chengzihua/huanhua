@@ -1,0 +1,67 @@
+{% extends 'base5.html' %}
+
+{% block title %}diary_detail{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/diary_detail.css')}}">
+{% endblock %}
+
+{% block main %}
+<div class="detail-container">
+    <div class="container">
+        <h3 class="pageheader">{{diary.title}}</h3>
+        <span class="user">作者：{{diary.user.username}}</span>
+        <span class="time">时间：2017-10-12 15：56：24</span>
+        <div class="detail-content">
+            <div class="col-md-4">
+                <img src="{{ url_for('static',filename='images/populardiary/diary_detail/image1.jpg') }}" width="200px" height="200px">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7"><p>{{diary.content}}</p></div>
+        </div>
+
+
+        <div class="detal-comment">
+            <div class="detail-coment-send">
+                <h3>评论（0）：</h3>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <form action="{{ url_for('add_comment') }}" method="post" class="form-horizontal">
+                        <div class="form-group">
+                            <!--列可以设置为cols="8"-->
+                            <textarea  name="comment_content" class="form-control" rows="5" placeholder="请填写评论"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <!--列可以设置为cols="8"-->
+                            <input type="hidden" name="diary_id" value="{{diary.id}}">
+                        </div>
+                        <button type="submit" name="comment_content" class="btn btn-primary btn-block ">评论</button>
+                    </form>
+                </div>
+                <div class="col-md-2"></div>
+
+            </div>
+
+
+            <div class="show_comment">
+                <ul class="comment-list">
+
+                    {% for comment in diary.comments %}
+                        <li>
+                            <div class="comment-detail">
+                                <img src="{{ url_for('static',filename='images/populardiary/diary_detail/image1.jpg') }}" >
+                                <h5 class="comment_username">{{ comment.user.username }}</h5>
+                                <span class="comment_content">{{ comment.content }}</span>
+                                <!--<span class="comment_time">2017/4/31 15:45:12</span>-->
+                            </div>
+                        </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

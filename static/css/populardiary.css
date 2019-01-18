@@ -1,0 +1,59 @@
+
+        /*搜索框*/
+        #search{
+            position:absolute;
+            display:inline-block;
+            top:40px;
+            right:800px;
+            /*background: #7BA7AB;*/
+        }
+            #search form{
+                position:relative;
+                width:300px;
+                height:30px;
+            }
+            #search input{
+                position:absolute;
+                right:50px;
+                width: 250px;
+                height:30px;
+                border-radius: 42px;
+                background: #F9F0DA;
+                border: 2px solid #324B4E;
+                transition: .3s linear;
+                float: right;
+                color:#000;
+            }
+            #search input:focus{
+                width: 300px;
+            }
+            #search button img{
+                position:absolute;
+                 width:30px;
+                 height:30px;
+                 border-radius: 5px;
+                  top: 2px;
+                  right: 5px;
+            }
+
+.form-control{
+    display:inline-block;
+}
+.form-group .text-muted{
+    display:inline-block;
+}
+.tenant-story{
+    /*height:1050px;*/
+}
+
+.media-body{
+    position:relative;
+    width:500px;
+}
+
+.media-bottom{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+

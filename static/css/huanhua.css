@@ -1,0 +1,231 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"微软雅黑","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo; 
+	color:#fff;
+ }
+a{
+	text-decoration: none;
+    color:#ccc;
+ }
+.top{
+	height:100px;
+	position:relative;
+ }
+    #logo_conter{
+    	display:inline-block;
+     }
+    #introduce{
+    	position:absolute;
+    	display:inline-block;
+    	right:50px;
+        background:red;
+     }
+        /*搜索框*/ 
+        #search{
+            position:absolute;
+            display:inline-block;
+            top:40px;
+            right:150px;
+            /*background: #7BA7AB;*/
+        }
+            #search form{
+                position:relative;
+                width:300px;
+                height:30px;
+            }
+            #search input{
+                position:absolute;
+                right:45px;
+                width: 250px; 
+                height:30px;
+                border-radius: 42px; 
+                background: #F9F0DA;
+                border: 2px solid #324B4E;
+                transition: .3s linear; 
+                float: right;
+                color:#000;
+            }
+            #search input:focus{
+                width: 300px;
+            }
+            #search button{
+                position:absolute;
+                 width:30px;
+                 height:30px;
+                 border-radius: 5px; 
+                  top: 2px; 
+                  right: 10px;
+            }
+
+        #loading{
+            position:absolute;
+            display:inline-block;
+            right:5px;
+            width:100px;
+        }
+
+.index-nav-menu{
+	height:50px;
+	background:#000;
+    margin:0 auto;
+ }
+	.index-nav-menu span{
+	    height:40px;
+	    width:16%;
+	    text-align:center;
+	    font-size:25px;
+	    float:left;
+	    color:#fff;
+	    cursor:pointer;
+	 }
+
+.main{ 
+	    width:100%;
+		height:500px;
+		/*background:url(image/mainBackground.jpg);*/
+        position: relative;
+		margin:0 auto;           /*盒子距离上下为0，左右居中*/
+
+	    }  
+        .img_conter{
+               width:70%;
+               margin:0 auto;
+               position: relative;
+               }
+       .small{
+         	    width:100%;
+        	    height:500px;
+        	    background:#000000;
+                position: absolute;
+                top:0;
+                left: 0;
+                display:none;
+               }
+       .button{
+       	        position:absolute;
+        	    bottom:20px;
+        	    width:100%;
+        	    text-align:center;
+               }
+       .button span{
+        	    width:50px;
+        	    height:10px;
+        	    background:#ffffff;
+        	    display:inline-block;
+                cursor: pointer;
+               }
+       .button span:first-child{
+                background: red;
+               }
+
+.snack{
+	height:280px;
+	/*background:#ccc;*/
+	margin:15px;
+    }
+    #snack_title{
+    	height:35px;
+    	/*background:red;*/
+    	font-size:25px;
+    	display:inline-block;
+     }
+        #dot_right{
+        	display:inline-block;
+        	float:right;
+            margin: 0 3px;
+        }
+        #more{
+    	    display:inline-block;  	
+    	    float:right;
+            margin:0 5px;
+        } 
+    .snack_ph_conter{
+    	width:15%;
+    	height:200px;
+    	float:left;
+    	margin:0.8%;
+         }
+        .snack_ph_conter img{
+	            transition: 0.5s;
+				}
+        .snack_ph_conter:hover img{
+	            transform:rotate(360deg) scale(1.5);  /*旋转720度，缩放为0*/
+        }
+
+.picking_homestay{
+	height:700px;
+	width:100%;
+	/*background:blue;*/
+	margin:50px;
+      }
+    .picking{
+        width:40%;
+        height:655px;
+        margin:10px 5%;
+       /* background:red;*/
+        float:left;
+    }
+        .picking table{
+        	width:100%;
+        	height:580px;
+        }
+            .picking table tr td{
+            	/*position:absolute;*/
+            }
+            .picking table img{
+            	width:95%;
+            	height:180px;
+
+            }
+                .picking table tr td span{
+                	position:relative;
+                	bottom:5px;
+                	left:40px;
+                	color:blue;
+                }
+    .homestay{
+    	width:40%;
+    	height:600px;
+    	margin:10px 0px;
+    /*	background:#ccc;*/
+    	float:left;
+    }
+        .homestay table{
+        	width:100%;
+        	height:580px;
+        }
+           /* .homestay table tr{
+            	height:200px;
+            }*/
+            .homestay table img{
+            	width:95%;
+            	height:180px;
+            }
+            .homestay td span{
+                position:relative;
+                	bottom:5px;
+                	left:20px;
+                	/*color:blue;*/
+            }
+
+.surrounding_scenic{
+    width:100%;
+    height:300px;
+    /*background:#ccc;*/
+   }  
+
+.bottom{
+	width:80%;
+	height:120px;
+	/*background:#ccc;*/
+	margin:10px 10%;
+}
+    .bottom #bottom_title{
+    	font-size:60px;
+    }
+    .bottom div{
+    	width:20%;
+    	height:100px;
+    	float:left;
+    }          

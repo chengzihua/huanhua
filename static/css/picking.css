@@ -1,0 +1,19 @@
+/*季节采摘*/
+.quarter-picking .container .col-md-9 .col-md-4{
+    height:680px;
+}
+
+
+/*水果新闻*/
+
+.picking-news-li{
+    display:inline;
+    color:blue;
+}
+.glyphicon glyphicon-fire{
+    display:inline;
+
+}
+#picking-news-comment{
+    margin:110px 0 0 0;
+}

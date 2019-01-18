@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="huanhua" content="populardiary">
+    <title>huanhua_{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="../static/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/base5.css') }}" >
+    <script src="../static/bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+
+    <div class="navbar  navbar-fixed-top ">
+        <div id="logo_conter">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static',filename='images/top/logo.png') }}" width=150px height=100px >
+            </a>
+        </div>
+
+        <div id="introduce">
+
+            <h2 class="text-muted">旅行游记</h2>
+
+            <div id="loading">
+
+                {% if user %}
+                <p>
+                    <a href="#">{{user.username}}</a>
+                    /<a href="{{ url_for('logout') }}">注销</a>
+                </p>
+                {% else %}
+                <a href="{{ url_for('login') }}">登录</a>
+                /<a href="{{ url_for('regist') }}">注册</a>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        {% block main %} {% endblock %}
+    </div>
+
+    <div class="bottom">
+        <div>
+            <p id="bottom_title">幻华</p>
+        </div>
+        <div>
+            <p><a href="">关于幻华</a></p>
+            <p>工作室简介</p>
+            <p>隐私权条款</p>
+        </div>
+        <div>
+            <p><a href="">网站合作</a></p>
+            <p>幻华推广</p>
+            <p>渠道招商</p>
+        </div>
+        <div>
+            <p><a href="">帮助中心</a></p>
+            <p>常见指南</p>
+            <p>防骗指南</p>
+        </div>
+        <div>
+            <p><a href="">安全中心</a></p>
+            <p>账号登录</p>
+            <p>安全设置</p>
+        </div>
+    </div>
+
+</body>
+<script>
+    {% block script_diary %}{% endblock %}
+</script>
+</html>

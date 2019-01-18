@@ -1,0 +1,48 @@
+/*顶部设计*/
+.top{
+	height:100px;
+	position:relative;
+	background:black;
+	margin:0 0 5px 0;
+ }
+    #logo_conter{
+    	display:inline-block;
+     }
+    #introduce{
+    	position:absolute;
+    	display:inline-block;
+    	right:10px;
+     }
+        /*.text-muted{
+            	position:absolute;
+            	top:2px;
+            }*/
+
+
+        /*登录与注册*/
+        #loading{
+            position:absolute;
+            display:inline-block;
+            right:5px;
+            width:120px;
+        }
+
+/*底部设计*/
+.bottom{
+	width:80%;
+	height:120px;
+	/*background:#ccc;*/
+	margin:10px 10%;
+}
+    .bottom #bottom_title{
+    	font-size:60px;
+    }
+    .bottom div{
+    	width:20%;
+    	height:100px;
+    	float:left;
+    }
+    #small-annotation{
+        float:right;
+        margin:0 10px 1px;
+    }

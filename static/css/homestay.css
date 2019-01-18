@@ -1,0 +1,35 @@
+.form-control{
+    display:inline-block;
+}
+.form-group .text-muted{
+    display:inline-block;
+}
+
+
+/*homestay的轮播图样式*/
+*{
+    font-family:"微软雅黑","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+    }
+    .logo {
+    padding:0;
+    }
+    #myCarousel {
+    margin: 0px 0 0 0;
+    }
+    #navbar-collapse ul {
+    margin-top:0px;
+    }
+    .carousel-inner img{
+        width:800px;
+        height:350px;
+        margin: 0 auto;
+    }
+
+    .carousel-control{
+        font-size: 100px;
+
+    }
+
+.tenant-story{
+    /*height:1050px;*/
+}

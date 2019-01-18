@@ -1,0 +1,75 @@
+/*顶部设计*/
+a{
+    color:#blue;
+}
+.top{
+    height:100px;
+    position:relative;
+    background:black;
+    margin:0 0 5px 0;
+ }
+    #logo_conter{
+        display:inline-block;
+     }
+    #introduce{
+        position:absolute;
+        display:inline-block;
+        right:10px;
+        /*background:red;*/
+     }
+        /*.text-muted{
+                position:absolute;
+                top:2px;
+            }*/
+
+    /*登录与注册*/
+        #loading{
+            position:absolute;
+            display:inline-block;
+            right:5px;
+            width:120px;
+           /* background:red;*/
+        }
+
+        /*时间表*/
+
+.bid{
+        width:300px;
+        height:50px;
+        /*background:#ccc;*/
+        color:#fff;
+        text-align:center;
+        font-family:微软雅黑;
+        font-size:30px;
+        line-height:50px;
+        border-radius:50px;
+      }
+     #time{
+        margin:30px 50px 0px 0px;
+        display:inline-block;
+        position:absolute;
+        right:50px;
+       }
+
+
+/*底部设计*/
+.bottom{
+
+    width:80%;
+    height:120px;
+    /*background:#ccc;*/
+    margin:10px 10%;
+
+ }
+    .bottom #bottom_title{
+        font-size:60px;
+    }
+    .bottom div{
+        width:20%;
+        height:100px;
+        float:left;
+    }
+    #small-annotation{
+        float:right;
+        margin:0 10px 1px;
+    }

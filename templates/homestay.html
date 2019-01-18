@@ -1,0 +1,203 @@
+{% extends 'base1.html' %}
+<!--#继承父模板-->
+
+{% block title %}homestay{% endblock %}
+
+{% block head %}
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/homestay.css') }}">
+{% endblock %}
+
+{% block main %}
+    <hr>
+    <!-- 选择区 -->
+    <div class="select">
+        <div class="container">
+
+            <div class="col-md-6">
+               <!-- <img src="images/homestay/image1.jpg"> -->
+
+               <!-- 轮播图        -->
+                <div id="myCarousel" class="carousel slide">  
+                    <ol class="carousel-indicators">  
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"> </li>  
+                        <li data-target="#myCarousel" data-slide-to="1"> </li>  
+                        <li data-target="#myCarousel" data-slide-to="2"> </li>
+                        <li data-target="#myCarousel" data-slide-to="3"> </li>  
+              
+                    </ol>   
+                <div class="carousel-inner">  
+                <div class="item active" style="background:rgb(232,234,219);">  
+                    <img src="../static/images/homestay/image1.jpg" alt="snack_one">
+                </div>  
+                <div class="item" style="background:rgb(247,240,252);">  
+                    <img src="../static/images/homestay/image2.jpg" alt="sanck_two">
+                </div>  
+                <div class="item" style="background:rgb(252,250,238);">  
+                    <img src="../static/images/homestay/image3.jpg" alt="snack_three">
+                </div>  
+                <div class="item" style="background:rgb(252,250,238);">  
+                    <img src="../static/images/homestay/image4.jpg" alt="snack_three">
+                </div>  
+          
+                </div>  
+      
+            <a href="#myCarousel" data-slide="prev" class="carousel-control left">  
+                <span class="glyphicon glyphicon-chevron-left"> </span>  
+            </a>  
+            <a href="#myCarousel" data-slide="next" class="carousel-control right">  
+                <span class="glyphicon glyphicon-chevron-right"> </span>  
+            </a>  
+        </div>  
+        </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+            <form>
+                
+                <div class="form-group">
+                <label><h3 class="text-muted">目的地：</h3></label>
+                <!-- class="form-control"占据整个一行 -->
+                <select class="form-control">
+                    <option>金明区</option>
+                    <option>明伦区</option>
+                    <option>龙亭区</option>
+                    <option>顺河回族区</option>
+                    <option>鼓楼区</option>
+                    <option>禹王台区</option>
+                    <option>祥符区</option>
+                    <option>开封新区</option>
+                    <option>开发区</option>
+                    <option>不限</option>
+                </select>
+                </div>
+                <div class="form-group">
+                <label><h3 class="text-muted">日期：</h3></label>
+                <!-- class="form-control"占据整个一行 -->
+                <input type="text" class="form-control" placeholder="入住退房时间">
+                </div>
+                <div class="form-group">
+                <label><h3 class="text-muted">人数：</h3></label>
+                <!-- class="form-control"占据整个一行 -->
+                <select class="form-control">
+                    <option>不限</option>
+                    <option>1人</option>
+                    <option>2人</option>
+                    <option>3人</option>
+                    <option>4人</option>
+                    <option>5人</option>
+                    <option>5人+</option>
+                </select>
+                </div>
+
+                <button type="submit" class="btn btn-default">搜索</button>
+            <button type="reset" class="btn btn-default">复位</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <div class="way-to-reside">
+        <div class="container">
+            <h1 class="text-info">本地人告诉你开封民宿的新住法</h1>
+            <div class="col-md-4">
+                <img src="../static/images/homestay/way-to-reside/image1.jpg" width=300px height:200px>
+                <h4 class="text-muted">住到不一样的金明区</h4>   
+                <p class="text-info">悠然自在地生活</p>
+                <p><a href="">园林社区-温莎尚郡</a>中禅意小两房，它能给您带来</p>
+                <p>休闲惬意的感受。停下您繁忙的脚步，静下来，静</p>
+                <p>下来，无论是亲密的情侣，还是另类的旅行者。</p>
+            </div>
+            <div class="col-md-4">
+                <img src="../static/images/homestay/way-to-reside/image2.jpg" width=300px height:200px>
+                <h4 class="text-muted">住到不一样的清明上河园</h4> 
+                <p class="text-info">另类的居住者</p>
+                <p><a href="">里舍·近清园武侠城家庭运动套房</a>这里不堆砌华丽，也</p>
+                <p>没有浓厚的商务感。但这里充满温馨且具有鲜明的特色。 </p>
+            </div>
+            <div class="col-md-4">
+                <img src="../static/images/homestay/way-to-reside/image3.jpg" width=300px height:200px>
+                <h4 class="text-muted">住到不一样的汴西湖</h4> 
+                <p class="text-info">充满爱意的房间</p>
+                <p><a href="">汴西湖一室温馨雅致</a>既有私密如家的温馨，更有星级</p>
+                <p>酒店的服务和设施；既有家庭或结伴旅游的套房，也有商务接待的厅堂。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <div class="tenant-story">
+        <div class="container">
+            <h1 class="text-info">热门的房客故事</h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;
+            开封是一座历史文化名城,文化积淀十分深厚，北宋时期,开封作为国都汴京(东京),是中国政治、经济、军事、科技、文化、商业和城市的中心,也是当时世界上最繁华、面积最大的大都市。开封的出租民宿房量充足,价格实惠。阅读评语,选择最适合您的民宿。幻华为您推荐开封府民宿,开封府特色民宿、开封府民宿客栈、开封府短租公寓、开封府家庭旅馆等房源信息。</p>
+            <button class="btn btn-primary">更多&nbsp;<span class="glyphicon glyphicon-triangle-right"></span>
+            </button>
+            <hr>
+            <div class="col-md-3">
+                <img src="../static/images/homestay/tenant-story/image1.jpg" width=250px height=250px>
+                <p><a href="">开封竹里游多多客栈</a>位于开封，提供免费Wifi。所有客房均配有私人浴室。客栈提供行李寄存处。
+                开封竹里游多多客栈距离开封河畔景观花园有1.2公里，距离开封鼓楼有2.2公里，距离郑州新郑国际机场54公里。</p>
+                <hr><hr>
+                <img src="../static/images/homestay/tenant-story/image2.jpg" width=250px height=250px>
+                <p><a href="">开封闻喜客栈</a>提供居家般的住宿。为了您的方便，客栈提供免费WiFi和免费停车位。 客栈距离开封火车站有25分钟车程，距离郑州新郑国际机场有1小时40分钟的车程。 您可以选择入住私人客房或热闹的宿舍间。</p>
+
+            </div>
+            
+            <div class="col-md-3">
+                <img src="../static/images/homestay/tenant-story/image3.jpg" width=250px height=250px >
+                <p><a href="">紫纯住房</a> 紫纯住房为客人提供行李寄存服务。用餐方面，宾馆周边分布有多家就餐场所，客人拥有诸多就餐选择。 宾馆距离开封火车站有30分钟车程，距离开封客运站有35分钟车程，距离郑州新郑机场有1.5小时车程。</p>
+                <hr><hr>
+                <img src="../static/images/homestay/tenant-story/image4.jpg" width=250px height=250px>
+                <p><a href="">开封阳光纳里精品度假客栈</a>提供开封地区的舒适住宿，享有传统中式装修。客栈内设有阳光露台和花园。 客栈距离开封火车站有20分钟车程，距离清明上河园和龙亭公园均有5分钟步行路程，距离瀚园仅有10分钟步行路程。</p>
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/homestay/tenant-story/image5.jpg" width=250px height=250px>
+                <p><a href="">东京梦华连锁-温馨两居室</a>房子是90平的小两室，温馨舒适，屋内设施均是全新，小区环境优美，位置好找，且离景区很近，很方便！房东很热情，房间很干净，家具家电很全，就像在家一样，比住宾馆好太多，总之全家都特别开心满意。</p>
+                <hr><hr>
+                <img src="../static/images/homestay/tenant-story/image6.jpg" width=250px height=250px>
+                <p><a href="">新河大三室美式田园</a>园林社区内、名匠细琢，成就了美式复古主题的惬意三房！主卧复古、次卧地中海、田园，处处体现设计师赋予房子的灵魂。高速光纤接入，让您享受极速冲浪！除了网络电视、冰箱、洗衣机等全套家电，就连厨房用品、调料也一应俱全。</p>
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/homestay/tenant-story/image7.jpg" width=250px height=250px>
+                <p><a href="">清园四室中式古典</a>如果说这套房子是开封城离景区最近的，一点也不过分！马路对面就是清明上河园、翰园碑林、天波杨府、龙亭！可谓移步换景！不仅位置绝佳，房间内也是细致入微！中式+禅意的风格与周边的环境十分映衬。</p>
+                <hr><hr>
+                <img src="../static/images/homestay/tenant-story/image8.jpg" width=250px height=250px>
+                <p><a href="">汴西湖三室墅质洋房</a>该房位于小区最西边，紧邻美丽的汴西湖！低密度电梯洋房的二楼，140多平米的豪华三房，房间内家具家电一应俱全，举家旅行、好友自驾、商务差旅的不二之选。</p>
+            </div>
+        </div>
+    </div>  
+{% endblock %}
+
+
+{% block script_diary %}
+
+   // 自动播放  
+        $("#myCarousel").carousel({  
+            interval:2000,  
+        }); 
+        
+    
+    function getTime(){
+        dobj=new Date();
+        hour=dobj.getHours();
+        if(hour<10){
+            hour='0'+hour;
+        }
+        minute=dobj.getMinutes();
+        if(minute<10){
+             minute='0'+minute;
+        }
+        second=dobj.getSeconds();
+        if(second<10){
+              second='0'+second;
+        }
+        var str=hour+':'+minute+':'+second;
+        sidobj=document.getElementById('sid');  //得到sid对象,触发事件
+        sidobj.innerHTML=str;
+    }
+        sobj=setInterval(getTime,1000)
+
+{% endblock %}

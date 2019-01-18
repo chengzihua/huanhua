@@ -1,0 +1,202 @@
+{% extends 'base5.html' %}
+<!--#继承父模板-->
+
+{% block title %}pupulardiary{% endblock %}
+
+{% block head %}
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/populardiary.css') }}">
+      <script src="../static/js/populardiary.js"></script>
+{% endblock %}
+
+{% block main %}
+      <div class="container">
+           <div class="col-md-8">
+                <div class="diary_top">
+                    <!-- <ul class="nav nav-pills">
+                        <li role="presentation" class="active li1"><a href="" class="text-info">热门游记</a></li>
+
+                        <li role="presentation" class="li1"><a>最新发表</a></li>
+                    </ul> -->
+                    <div>
+
+                        <div class="col-md-5">
+                            <a href="{{ url_for('populardiary') }}"><button class="btn btn-info active li1" >热门游记</button></a>
+                            <button class="btn btn-default li1">最新发表</button>
+                        </div>
+                        <form  method="get" action="{{ url_for('diary_search') }}">
+
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" name="q" placeholder="Search for...">
+
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn btn-default" type="submit" ><span class="glyphicon glyphicon-th-list"></span>筛选</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <hr>
+                <hr>
+                <hr>
+                <div>
+
+                    <!-- 热门游记的链接 -->
+
+                    <div class="navs ">
+                        <h2>热门游记</h2>
+                        {% for diary in diarys %}
+                             <hr>
+                        <div>
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object" src="{{ url_for('static',filename='images/populardiary/hot/image1.jpg') }}" alt="diary_hot" width=300px height=200px>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="{{ url_for('diary_detail',diary_id=diary.id) }}">{{diary.title}}</a></h4>
+                                <p>{{diary.content}}</p>
+                                <div class="media-bottom">
+                                    <div class="col-md-5">
+                                        <span class="glyphicon glyphicon-map-marker"></span>开封
+                                    </div>
+                                    <div class="col-md-1">
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        by<a href="">{{diary.user.username}}</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+
+                    <!-- 最近发表的链接 -->
+                    <div class="navs">
+                        <h2>最新发表</h2>
+                        {% for diary in diarys %}
+                             <hr>
+                             <div>
+                                 <div class="media-left media-middle">
+                                     <a href="#">
+                                         <img class="media-object" src="{{ url_for('static',filename='images/populardiary/hot/image2.jpg') }}" alt="diary_hot" width=300px height=200px>
+                                     </a>
+                                 </div>
+                                 <div class="media-body">
+                                     <h4 class="media-heading"><a href="#">{{diary.title}}</a></h4>
+                                     <p>{{diary.content}}</p>
+                                     <div class="media-bottom">
+                                         <div class="col-md-5">
+                                             <span class="glyphicon glyphicon-map-marker"></span>开封
+                                         </div>
+                                         <div class="col-md-1">
+                                             <!--<span class="glyphicon glyphicon-heart-empty"></span>-->
+
+                                         </div>
+                                         <div class="col-md-6">
+                                             by<a href="">{{diary.user.username}}</a>
+
+
+                                             <!--<span class="glyphicon glyphicon-eye-open"></span>-->
+
+                                         </div>
+
+                                     </div>
+                                 </div>
+                             </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+           </div>
+
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <div class="col-md-10">
+                    </div>
+                    <div class="col-md-2">
+                        <a href="{{ url_for('write_diary') }}"><button class="btn btn-default"><span class="glyphicon glyphicon-edit"></span>写游记</button></a>
+                    </div>
+                </div>
+                <hr>
+                <hr>
+                <div id="populardiary_ad">
+                    <h3 class="text-info">拾梦之旅旅行社</h3>
+                    <p><a href="">查看更多></a></p>
+                    <img src="../static/images/populardiary/ad/image1.jpg">
+
+                    <div>
+                        <div class="col-md-7">
+                            <p>宝泉一日游99/人</p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                                <span class="glyphicon glyphicon-hand-right"></span>
+                                <a href="">点击预订</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-7">
+                            <p>嵩山一日游88/人</p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                                <span class="glyphicon glyphicon-hand-right"></span>
+                                <a href="">点击预订</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-7">
+                            <p>嵩山少林寺一日游118/人</p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                                <span class="glyphicon glyphicon-hand-right"></span>
+                                <a href="">点击预订</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-7">
+                            <p>五龙山游乐场88/人</p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                                <span class="glyphicon glyphicon-hand-right"></span>
+                                <a href="">点击预订</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+      </div>
+
+
+{% endblock %}
+
+{% block script_diary %}
+    //     胶囊页导航代码
+        $('.navs').hide();
+        $('.navs').eq(0).show();
+        $('.li1').click(function(){
+    	 <!--$(this).addclass('active');-->
+    	 <!--$('.li1').not($(this))removeclass('active');-->
+    	idx=$(this).index('.li1');
+    	$('.navs').eq(idx).show();
+    	$('.navs').not($('.navs').eq(idx)).hide();
+    });
+{% endblock %}

@@ -1,0 +1,179 @@
+{% extends 'base2.html' %}
+<!--#继承父模板-->
+
+{% block title %}picking{% endblock %}
+
+{% block head %}
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/picking.css') }}">
+{% endblock %}
+
+{% block text_title %}采摘园一条街{% endblock %}
+
+
+{% block main %}
+
+    <hr>
+    <!-- 季节采摘 -->
+    <div class="quarter-picking">
+        <div class="container">
+            <div class="col-md-9">
+            <h1 class="text-info">下个采摘季节等你哦</h1>
+                <div class="col-md-4">
+                    <img src="../static/images/picking/sqarter-picking/image1.jpg" width=300px height=200px>
+                    <h4><a herf="">葡萄采摘园</a></h4>
+                    <p>地址： 开封-开封县陈留镇六里庄村西
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;民润葡萄生态农场</p>
+                    <p><a href="">私信给我</a></p>
+
+                    <hr>
+                    <hr>
+                    <img src="../static/images/picking/sqarter-picking/image3.png" width=300px height=200px>
+                    <h4><a herf="">樱桃采摘园</a></h4>
+                    <p>地址:开封-开封县开封市祥符区马寨村</p>
+                    <p><a href="">私信给我</a></p>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-4">
+                    <img src="../static/images/picking/sqarter-picking/image2.png" width=300px height=200px >
+                    <h4><a herf="">仙桃采摘园</a></h4>
+                    <p>地址：金明-金明区开封西区6大街与宋城路交汇处西南角</p>
+                    <p><a href="">私信给我</a></p>
+                    <hr>
+                    <hr>
+                    <img src="../static/images/picking/sqarter-picking/image4.jpg" width=300px height=200px>
+                    <h4><a herf="">柿子采摘园</a></h4>
+                    <p>地址：金明-金明区杏花营派出所隔壁</p>
+                    <p><a href="">私信给我</a></p>
+                </div>
+
+                <!--  按钮组 -->
+                <div class="contaier_btn">
+                    <div class="btn-group">
+                        <button class="btn btn-default ">首页</button>
+                        <button class="btn btn-success ">2</button>
+                        <button class="btn btn-success ">3</button>
+                        <button class="btn btn-success ">4</button>
+                        <button class="btn btn-success ">5</button>
+                        <button class="btn btn-success ">6</button>
+                        <button class="btn btn-success ">7</button>
+                        <button class="btn btn-success ">8</button>
+                        <button class="btn btn-success ">9</button>
+                        <button class="btn btn-default ">···</button>
+                        <button class="btn btn-default ">>>></button>
+                    </div>
+                </div>           
+            </div>
+
+            <div class="col-md-3">
+                <h2 class="text-warning">果实成熟季节指南</h2>
+                    <h3 class="text-warning">春季</h3>
+                    <h4 class="text-muted"><i class="text-info">草莓</i>：3-5月（春末夏初）</h4>
+                    <h4 class="text-muted"><i class="text-info">樱桃</i>：5月中旬到6月中旬</h4>
+                    <h4 class="text-muted"><i class="text-info">杏</i>：5月下旬-7月中旬</h4>
+                    <h3 class="text-warning">夏季</h3>
+                    <h4 class="text-muted"><i class="text-info">西瓜</i>: 夏季6-7月份成熟</h4>
+                    <h4 class="text-muted"><i class="text-info">桃子</i>：中熟品种7－8月份</h4>
+                    <h4 class="text-muted"><i class="text-info">葡萄</i>：北方的8、9月</h4>
+                    <h4 class="text-muted"><i class="text-info">李子</i>: 8、9月</h4>
+                    <h4 class="text-muted"><i class="text-info">提子</i>: 8-10月</h4>
+                    <h4 class="text-muted"><i class="text-info">苹果</i>：9-10月</h4>
+                    <h3 class="text-warning">秋季</h3>      
+                    <h4 class="text-muted"><i class="text-info">红薯</i>: 10-11月</h4>
+                    <h4 class="text-muted"><i class="text-info">花生</i>: 7-10月</h4>   
+                    <h4 class="text-muted"><i class="text-info">梨</i>: 9月底-10月初</h4>
+                    <h4 class="text-muted"><i class="text-info">柿子</i>: 9-10月</h4>
+                    <h4 class="text-muted"><i class="text-info">冬枣</i>：10月中旬</h4>
+            </div>
+
+        </div>
+    </div>
+
+
+
+     <hr>
+    <div class="way-to-picking">
+        <div class="container">
+            <h1 class="text-info">本地人告诉你开封采摘园的新摘法</h1>
+            <div class="col-md-4">
+                <img src="../static/images/picking/way-to-picking/image1.jpg" width=300px height=250px>
+                <h4 class="text-muted">摘到不一样的樱桃</h4>   
+                <p class="text-info">品尝果实，享受生活</p>
+                <p><a href="">开封樱桃采摘</a>林间满枝头的樱桃红彤彤，是不是垂涎</p>
+                <p>欲滴，忍不住想要亲自采摘，当一把果园农夫。</p>
+            </div>
+            <div class="col-md-4">
+                <img src="../static/images/picking/way-to-picking/image2.jpg" width=300px height=250px>
+                <h4 class="text-muted">摘到不一样的草莓</h4> 
+                <p class="text-info">另类的偷食者</p>
+                <p><a href="">金明区草莓采摘</a>草莓是原生态、没有污染的，即采即吃。</p>
+                <p>既大饱了口福又愉悦了身心，真是个好去处。</p>
+            </div>
+            <div class="col-md-4">
+                <img src="../static/images/picking/way-to-picking/image3.jpg" width=300px height=250px>
+                <h4 class="text-muted">摘到不一样的桑葚果</h4> 
+                <p class="text-info">这就是小幸运</p>
+                <p><a href="">黄河岸边四季美生态庄园</a>小伙伴们，是不是想听着鸟鸣，</p>
+                <p>亲自去枝头寻觅那一颗颗饱满的紫色桑果，放开肚皮畅快地品尝一口酸爽？</p>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <div class="picking-news">
+        <div class="container">
+
+            <div class="col-md-4">
+                <h2 class="text-info">热门评价</h2>
+                <hr>
+                <img src="../static/images/picking/picking-news/image1.png" width=300px height=200px>
+            </div>
+
+            <div class="col-md-3">
+                
+                <p id="picking-news-comment">说起<a href="">桑葚</a>，大多数人都有着同样的童年记忆，光着脚爬上几米高光溜溜的枝头，小心翼翼地去摘一颗颗熟透的桑葚，狠狠地塞进嘴巴，顿时一股甜滋滋酸溜溜的清新的感觉传遍全身，惬意极了。
+    现在，来黄河岸边的四季美生态庄园采摘桑葚吧，无需再爬光溜溜的大树，站在地上伸手即可采摘，带着孩子一起来体验采摘的乐趣吧！</p>        
+            </div>
+            <div class="col-md-1">
+            </div>
+
+            <div class="col-md-4">
+                <h2 class="text-info">你不知道的水果小新闻</h2>
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="li2">
+                        <span class="glyphicon glyphicon-fire"><a href="" class="picking-news-li"> 生活中的防癌水果</a></span>                   
+                    </li>
+                    <li role="presentation" class="li2">
+                        <span class="glyphicon glyphicon-fire"><a href="" class="picking-news-li"> 生活小常识 热带水果最好别放进冰箱</a></span> 
+                    </li>
+                    <li role="presentation" class="li2">
+                        <span class="glyphicon glyphicon-fire"><a href="" class="picking-news-li"> 什么水果可以消除疲劳</a></span> 
+                    <li role="presentation" class="li2">
+                        <span class="glyphicon glyphicon-fire"><a href="" class="picking-news-li"> 常用的治疗高血压病的水果</a></span> 
+                    </li>
+                    <li role="presentation" class="li2">
+                        <span class="glyphicon glyphicon-fire"><a href="" class="picking-news-li"> 小孩吃水果之水果煮一煮更健康</a></span> 
+                    </li>
+                    <li role="presentation" class="li2">
+                        <span class="glyphicon glyphicon-fire"><a href="" class="picking-news-li"> 胃寒者也能安心吃水果</a></span> 
+                    </li>
+                    <li role="presentation" class="li2">
+                        <span class="glyphicon glyphicon-fire"><a href="" class="picking-news-li"> 碱性水果更健康</a></span> 
+                    </li>
+                    <li role="presentation" class="li2">
+                        <span class="glyphicon glyphicon-fire"><a href="" class="picking-news-li"> 颜色鲜艳、营养更高</a></span> 
+                    </li>
+                    <li role="presentation" class="li2">
+                        <span class="glyphicon glyphicon-fire"><a href="" class="picking-news-li"> 吃果皮也是好习惯</a></span> 
+                    </li>
+                    <li role="presentation" class="li2">
+                        <span class="glyphicon glyphicon-fire"><a href="" class="picking-news-li"> 夏季防晒解暑全靠瓜果</a></span> 
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+{% endblock %}

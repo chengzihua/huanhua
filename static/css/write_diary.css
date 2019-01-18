@@ -1,0 +1,17 @@
+body{
+    background:url('../images/populardiary/write_diary/bg.jpg');
+}
+.form-container{
+    width:500px;
+    margin:0 auto;
+    text-align:center;
+}
+.text-info{
+    text-align:center;
+}
+.write_diary_container{
+    width:600px;
+    height:500px;
+    margin:200px auto 0;
+    /*background:red;*/
+}

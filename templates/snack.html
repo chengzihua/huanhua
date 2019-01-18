@@ -1,0 +1,235 @@
+{% extends 'base2.html' %}
+<!--#继承父模板-->
+
+{% block title %}snack{% endblock %}
+
+{% block head %}
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/snack.css') }}">
+{% endblock %}
+
+
+{% block text_title %}小吃一条街{% endblock %}
+
+{% block main %}
+ 
+    <hr>
+    <!-- 胶囊式导航 -->
+    <div class="nagative">
+        <div class="container"> 
+            <div class="col-md-2">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="active li2"><button class="btn btn-primary">鲤鱼碚面</button></li>
+                    <li role="presentation" class="li2"><button class="btn btn-default">炒凉粉</button></li>
+                    <li role="presentation" class="li2"><button class="btn btn-default">桶子鸡</button></li>
+                    <li role="presentation" class="li2"><button class="btn btn-default">灌汤包</button></li>
+                    <li role="presentation" class="li2"><button class="btn btn-default">高炉烧饼</button></li>
+                    <li role="presentation" class="li2"><button class="btn btn-default">沙家酱牛肉</button></li>
+                    <li role="presentation" class="li2"><button class="btn btn-default">京东饼</button></li>
+                    <li role="presentation" class="li2"><button class="btn btn-default">假鱿鱼</button></li>
+                    <li role="presentation" class="li2"><button class="btn btn-default">汴酱口条</button></li>
+                    <li role="presentation" class="li2"><button class="btn btn-default">水晶冻</button></li>
+                </ul>
+            </div>
+            <div class="col-md-10 nav1">
+                <!-- <p class="nav1"> -->
+                    <div class="col-md-7">
+                        <img src="../static/images/snack/snacktotal/image1.jpg" width=500px height=400px>
+                    </div>
+                    <div class="col-md-3">
+                    <a href="">“焙面”</a>以称“龙须面”。据《如梦录》载：明代开封每逢农历二月初二，所谓“龙抬头”之日，为呈吉祥，官府、民间都以细面相赠，称之为“龙须面”。起初面用水煮食，后来，不断改进，过油炸焦，使其蓬松酥脆，吸汁后，配菜肴同食，故称“焙面”。
+
+                    1930年前后，开封名师最早将用油炸过的“龙须面”，盖在做好的“糖醋熘鱼”上面，创作了“糖醋熘鱼带焙面”名菜，深为顾客欢迎。将二者合而为一，既可食鱼，又可以面蘸汁，故别有风味。其后，该菜逐渐传开。
+                    </div>
+            </div>
+            <div class="col-md-10 nav1">
+                    <div class="col-md-7">
+                        <img src="../static/images/snack/snacktotal/image2.jpg" width=500px height=400px >
+                    </div>
+                    <div class="col-md-3">
+                    <a href="">炒凉粉</a>是开封广大市民喜食的一种风味小吃。在开封城内，很多集贸市场和小吃摊点集中的地方大都设有出售点（大多用摊车），一般居民家庭也会制作。制法是：把粉芡配水打成稀糊，入沸水成熟糊晾凉，即为凉粉。炒凉粉就是发凉粉为主料，佐以豆酱、葱、姜、加油炒制而成。热香鲜嫩，焦而不糊。在改革开放的大潮中，炒凉粉这道风味独具的大众小吃，已被开封人带入北京市，据说还有人将它带到了俄罗斯和罗马尼亚等国。真可谓炒凉粉我名扬四海了。
+                    </div>
+            </div>
+            <div class="col-md-10 nav1">
+                    <div class="col-md-7">
+                        <img src="../static/images/snack/snacktotal/image3.jpg"  width=500px height=400px>
+                    </div>
+                    <div class="col-md-3">
+                      "马豫兴"桶子鸡体形浑圆完美，色泽鹅黄，油润光亮，食之肥而不腻，咸香嫩脆，略透荷香，成为开封酒会宴席上必备名菜。过去多为官宦和有钱人家享用，曾远销至上海、通化、广州、沈阳等地。
+                   建国以来，马豫兴名师王保山（已故）继承传统工艺，烹制的桶子鸡保持了原有特色和荣誉，在1982年和1984年全国熟肉制品评比中，两次荣获商业部优质产品称号。　　                   
+                      <a href="">桶子鸡</a>选料精细，烹制考究。主要选用生长期不超过3年的健壮膘肥母鸡，宰杀净毛后，去掉翅爪，取出内脏（留肺）并洗净体腔，用荷叶、秫秸秆装撑造型。待晾干后，根据鸡龄和体形，依次放入烧沸老汤锅内，用温火浸煮。一小时后将鸡翻身，再煮半小时捞出即成。
+                    </div>
+            </div>
+            <div class="col-md-10 nav1">
+                    <div class="col-md-7">
+                        <img src="../static/images/snack/snacktotal/image4.jpg"  width=500px height=400px>
+                    </div>
+                    <div class="col-md-3">
+                    　<a href="">开封灌汤包</a>是河南省开封市的特色小吃。开封小笼灌汤包外形美观，小巧玲珑，皮薄馅多，灌汤流油，味道鲜美，清香利口，还被人说为“放下像菊花，提起像灯笼”这样一种称法。以开封第一楼的小笼包最为出名。 开封小笼灌汤包是河南省开封市一道著名地方风味小吃。已有百年历史，创始人是黄继善。现有国营第一楼包子铺经营，是著名风味面点。开封小笼包子历史 
+                   悠久，它是由北宋时期“在京第一”的“王楼山洞梅花包子”经历代厨师逐渐改制而成。色、香、味、形具佳，别具一格。
+                    </div>
+            </div>
+            <div class="col-md-10 nav1">
+                    <div class="col-md-7">
+                        <img src="../static/images/snack/snacktotal/image5.jpg"  width=500px height=400px>
+                    </div>
+                    <div class="col-md-3">
+                    开封<a href="">高炉烧饼</a>是河南开封地方传统名吃。历史悠久，己有上千年的文明历史记载，高炉烧饼工艺简单，烧饼加牛肉 ，堪称一绝，烧饼颜色焦黄，放在木炭上慢烤随着烧饼的成熟，那香气四溢令人垂廷。所谓高炉原是吊炉，又有叫做鸡窝炉的，可挑担沿街售卖，后渐固定营业，炉顶之锅亦不再吊。此饼多以发酵面制作，擀片包芯，砍花摊圆，然后单面沾芝麻贴烤。成熟后外酥里嫩，可单食，但河南民间多视丰俭，或夹食牛羊肉；或夹食油条馓子；或夹食炒凉粉，均是美味。故开封一带常有带些烧饼，走亲戚有时也就是提几盒油馍。
+                    </div>
+            </div>
+            <div class="col-md-10 nav1">
+                    <div class="col-md-7">
+                        <img src="../static/images/snack/snacktotal/image6.jpg"  width=500px height=400px>
+                    </div>
+                    <div class="col-md-3">
+                    在开封小吃中，<a href="">沙家酱牛肉</a>是一道独特酱香型小吃。酱牛肉有强健筋骨、化痰息风、止渴止涎、补中益气、滋养脾胃的功效，适用于筋骨酸软、贫血久病、中气下陷、气短体虚及面黄目眩之人食用。
+                    酱牛肉性温，味甘。牛肉本身具有强筋骨、消水肿、补脾胃、益气血等功效。老年人将牛肉与仙人掌同食，可起到抗癌止痛、提高机体免疫功能的效果。牛肉加红枣炖服，则有助肌肉生长和促伤口愈合之功效。　                 牛肉有止渴止涎、补中益气、滋养脾胃、强健筋骨、化痰息风的功效。适用于贫血久病、中气下陷、气短体虚，筋骨酸软及面黄目眩之人食用。
+                    </div>
+            </div>
+            <div class="col-md-10 nav1">
+                    <div class="col-md-7">
+                        <img src="../static/images/snack/snacktotal/image7.jpg"  width=500px height=400px>
+                    </div>
+                    <div class="col-md-3">
+                   <a href="">京东饼</a>：北宋时京都开封东郊的边村，每年正月初八日举行隆重的庙会。相传，一次宋真宗皇帝的妃子李宸妃到庙会进香，远远看见一篷下的糕点饼十分好看，香味怡人，就让人买回给皇帝吃。宋真宗吃后连连称好，遂命御膳房仿制。因饼是从京城东边买来的，故起名为"京东饼"。京东饼是以精制面粉、白糖、鸡蛋、猪油等作面料，以枣泥、桂花、核桃仁为馅料，经调粉-制馅-成型-烘烤几道工序制成。成品呈圆形，表面柿黄色，底面棕黄色，有光泽，内部组织有细小裂纹和疏松细孔。食之细腻绵软、香甜可口，桂花、枣泥、核桃仁等香味尤为突出。
+                    </div>
+            </div>
+            <div class="col-md-10 nav1">
+                    <div class="col-md-7">
+                        <img src="../static/images/snack/snacktotal/image8.jpg"  width=500px height=400px>
+                    </div>
+                    <div class="col-md-3">
+                    假鱿鱼<a href="">假鱿鱼</a>是开封酱肉名师高佑臣继承传统工艺于60年代末研制成功的肉质精品。在省、市食品展销会上曾轰动一时，上市后深受欢迎。                鱿鱼冠以"假"字，因为主料不是鱿鱼而用鲜猪舌。制作时先将猪舌浸入沸水，至表面发白，剥去外膜洗净晾干，从舌根和硬腭处向舌尖分直、孤线划5刀，硬腭
+                   处全剖成鱿鱼须6条；舌体半剖为鱿鱼体，舌根成鱿鱼眼。然后将加工品放入盒内，佐以精盐、白糖、元油、曲酒、硝和多味大料，腌制两天，挂于阴凉通风处，10天左右即成。食用时清洗表面灰垢，蒸煮1小时左右，切成片状，装盘时仍复原形。其外观色泽酱红，酷似鱿鱼，生动别致，肉质细密。食之咸甜适口，回味绵长。
+                    </div>
+            </div>
+            <div class="col-md-10 nav1">
+                    <div class="col-md-7">
+                        <img src="../static/images/snack/snacktotal/image9.jpg"  width=500px height=400px>
+                    </div>
+                    <div class="col-md-3">
+                   <a href="">汴酱口条</a>开封汴酱制品种类繁多，风味各异，汴酱口条为其佼佼者。其肉质细密，色泽棕红，咸中透甜，甘香适口，滋味深长，曾在省食品展销会上深受好评。
+                   该产品一般在深秋和冬季制作，取猪口条割去舌根及淋巴，入沸水汆5分钟左右，剥去外膜冲洗干净，把精盐、花椒搓匀于口条表面，排除水份。然后放入配有精盐、白糖、酱油、料酒和混合香料拌和后的缸内浸泡腌制。7天后出缸（其间翻缸3次），挂在阴凉干燥通风处，15天左右取下，是为半成品。再入老汤锅内酱制40分钟，晾透后切成薄片配制冷盘，为下酒佐餐之佳品。
+                    </div>
+            </div>
+            <div class="col-md-10 nav1">
+                    <div class="col-md-7">
+                        <img src="../static/images/snack/snacktotal/image10.jpg"  width=500px height=400px>
+                    </div>
+                    <div class="col-md-3">
+                    <a href="">水晶冻</a>水晶冻包括水晶蹄冻和水晶皮冻两种，同为开封传统风味食品。因选料有别，工艺稍有差别。          　 
+                    水晶冻食用时切成大小一致、厚薄均匀的长方形片，装盘造型后，将麻油、香醋、姜丝、蒜泥调兑成汁浇在上面。观之晶莹剔透，食之鲜香爽口，且经济实惠，为佐酒之佳品。
+                    </div>
+            </div>   
+ 
+        </div>
+    </div>
+
+    <!-- 按钮 -->
+    <div class="contaier_btn">
+        <div class="btn-group">
+                <button class="btn btn-default  btn-lg">首页</button>
+                <button class="btn btn-primary btn-lg">2</button>
+                <button class="btn btn-primary btn-lg">3</button>
+                <button class="btn btn-primary btn-lg">4</button>
+                <button class="btn btn-primary btn-lg">5</button>
+                <button class="btn btn-primary btn-lg">6</button>
+                <button class="btn btn-primary btn-lg">7</button>
+                <button class="btn btn-primary btn-lg">8</button>
+                <button class="btn btn-primary btn-lg">9</button>
+                <button class="btn btn-default btn-lg">···</button>
+                <button class="btn btn-default btn-lg">>>></button>
+        </div>
+        
+    </div>
+
+    <hr>
+    <!-- 开封小吃新吃法 -->
+    <div class="waytoeat">
+        <div class="container">
+            <h1 class="text-primary" >本地人告诉你开封小吃的新吃法</h1>
+            <div class="col-md-4">
+                <img src="../static/images/snack/snacktotal/snack_waytoeat/image1.jpg" width=250px height:200px>
+                <h4 class="text-muted">吃到不一样的灌汤包</h4>   
+                <p class="text-info">悠然自在地生活</p>
+                <p>灌汤包皮薄，洁白如景德镇陶瓷，有透明之感。</p>
+                <p>吃之，内有肉馅，底层有鲜汤。</p>
+                <p>开封人吃灌汤包子有这样一句顺口溜“先开窗，</p>
+                <p>后喝汤，再满口香"</p>
+            </div>
+            <div class="col-md-4">
+                <img src="../static/images/snack/snacktotal/snack_waytoeat/image2.jpg" width=250px height:200px>
+                <h4 class="text-muted">吃到不一样的汽锅鸡</h4> 
+                <p class="text-info">喏，我是你的汽锅鸡</p>
+                <p>有独到的口味不但肉滑，味嫩而且鲜脆</p>
+                <p>特色鸡，这种鸡的肌肉非常的有肉感，肉质肥肥嫩嫩</p>
+                <p>白白净净，一看就是上桌的好料。</p>
+            </div>
+            <div class="col-md-4">
+                <img src="../static/images/snack/snacktotal/snack_waytoeat/image3.jpg" width=250px height:200px>
+                <h4 class="text-muted">吃到不一样的小凤饼</h4> 
+                <p class="text-info">享用美食不需要理由</p>
+                <p>小凤饼的特点：外层松脆，饼馅肥软，具有香、甜、咸等多种滋味。</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr>
+    <!-- 热门小吃做法 -->
+    <div class="snack_practice">
+        <div class="container">
+            <h1 class="text-info">热门的小吃故事</h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;开封是一座历史文化名城,文化积淀十分深厚，北宋时期,开封作为国都汴京(东京),是中国政治、经济、军事、科技、文化、商业和城市的中心,也是当时世界上最繁华、面积最大的大都市。北宋时期的饮食业极其繁荣，传播范围和面积非常广泛，如今的“开封豫菜”、“开封特产”、“开封小吃”等开封美食的名气，便是从北宋时期传播出来的。</p>
+            <button class="btn btn-primary">更多&nbsp;<span class="glyphicon glyphicon-triangle-right"></span>
+            </button>
+            <hr>
+            <div class="col-md-3">
+                <img src="../static/images/snack/snacktotal/snack_practice/image1.jpg" width=250px height=300px>
+                <p><a href="">沙家酱牛肉</a>味道鲜美，一嚼即烂，老少皆宜，全天然成分，不含色素等化学成分，多次在省、市和全国比赛中获奖。</p>
+                <hr><hr>
+                <img src="../static/images/snack/snacktotal/snack_practice/image5.jpg" width=250px height=300px>
+                <p><a href="">水晶冻</a>包括水晶蹄冻和水晶皮冻两种，同为开封传统风味食品。因选料有别，工艺稍有差别。</p>
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/snack/snacktotal/snack_practice/image2.jpg" width=250px height=300px >
+                <p><a href="">马豫兴桶子鸡</a>最初于清同治三年（1864年）马永岭在鼓楼东南侧设店开业，桶子鸡是其经营的主要品种之一。</p>
+                <hr><hr>
+                <img src="../static/images/snack/snacktotal/snack_practice/image6.jpg" width=250px height=300px>
+                <p>相传北宋时，每年赴东京（开封）赶考的书生络绎不绝。京师商贾为迎合考生心理，精心制作了一种饼食，取名"<a href="">状元饼</a>"。</p>
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/snack/snacktotal/snack_practice/image3.jpg" width=250px height=300px>
+                <p><a href="">花生糕</a>以精选的花生仁为生料,辅以白糖、饴糖,成品呈现状,多层次,显明显网络,疏松度强,食之香甜松脆,含口自化。</p>
+                <hr><hr>
+                <img src="../static/images/snack/snacktotal/snack_practice/image7.jpg" width=250px height=300px>
+                <p><a href="">窝窝肘</a>窝窝肘原名"酱肘子"，由北京传入开封。北京"天福号"酱肘子誉满京城，清朝末年为定期贡送进宫食品。</p>
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/snack/snacktotal/snack_practice/image4.jpg" width=250px height=300px>
+                <p>宋真宗吃后连连称好，遂命御膳房仿制。因饼是从京城东边买来的，故起名为<a href="">"京东饼"<a href="">。</p>
+                <hr><hr>
+                <img src="../static/images/snack/snacktotal/snack_practice/image8.jpg" width=250px height=300px>
+                <p><a href="">三鲜莲花酥</a>东京（开封）的糕点师傅附会这一故事，用香蕉、枣泥、山楂三种鲜味，仿莲花形状，制成了名点三鲜（三仙）莲花酥。</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block script_diary %}
+
+         //     胶囊页导航代码
+        $('.nav1').not($('.nav1').eq(0)).hide();
+        $('.nav1').eq(0).show();  //初始状态
+
+        //实行鼠标进入状态时
+        $('.li2').click(function(){
+           // $(this).addclass('active');
+           // $('.li1').not($(this))removeclass('active');
+        idx=$(this).index('.li2');
+        $('.nav1').eq(idx).show();
+        $('.nav1').not($('.nav1').eq(idx)).hide();
+        });
+
+{% endblock %}

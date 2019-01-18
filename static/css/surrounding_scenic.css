@@ -1,0 +1,30 @@
+a{
+    color:#ccc;
+}
+
+/*景区推荐*/
+.showing{
+    line-height:28px;
+}
+
+
+/*导航栏设计*/
+.nagative .container{
+        height:400px;
+       /* background:red;*/
+     }
+        .contaier_btn{
+            position:relative;
+            height:50px;
+        }
+        .btn-group{
+            position:absolute;
+            left:150px;
+        }
+
+
+/*旅游新闻*/
+.travel-news-li{
+    color:blue;
+}
+

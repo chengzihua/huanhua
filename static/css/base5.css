@@ -1,0 +1,59 @@
+/*顶部设计*/
+a{
+    color:#ccc;
+}
+/*.navbar-fixed-top{*/
+    /*height:100px;*/
+    /*position:relative;*/
+    /*background:black;*/
+    /*margin:0 0 5px 0;*/
+ /*}*/
+.navbar-fixed-top{
+    height:100px;
+    background:black;
+    margin:0 0 5px 0;
+}
+.main{
+    margin:110px 0 0 0;
+
+}
+    #logo_conter{
+        display:inline-block;
+     }
+    #introduce{
+        position:absolute;
+        display:inline-block;
+        right:20px;
+        /*background:red;*/
+     }
+
+    /*登录与注册*/
+        #loading{
+            position:absolute;
+            display:inline-block;
+            right:20px;
+            width:80px;
+           /* background:red;*/
+        }
+
+/*底部设计*/
+.bottom{
+    width:80%;
+    height:120px;
+    /*background:#ccc;*/
+    margin:10px 10%;
+
+
+ }
+    .bottom #bottom_title{
+        font-size:60px;
+    }
+    .bottom div{
+        width:20%;
+        height:100px;
+        float:left;
+    }
+    #small-annotation{
+        float:right;
+        margin:0 10px 1px;
+    }

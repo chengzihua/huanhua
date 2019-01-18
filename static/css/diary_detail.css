@@ -1,0 +1,77 @@
+body{
+    background:url('../images/populardiary/write_diary/bg.jpg');
+    color:#fff;
+}
+
+.detail-container{
+    /*background:red;*/
+    width:730px;
+    position:relative;
+    margin:0 auto;
+}
+.pageheader{
+    text-align:center;
+    width:600px;
+    margin:50px 0 20px;
+}
+.user{
+    position:absolute;
+    right:250px;
+}
+.time{
+    position:absolute;
+    right:1px;
+}
+.detail-content{
+    width:700px;
+    height:200px;
+    /*background:red;*/
+    margin:50px 0 0 0px;
+}
+/*.detail-container .container .col-md-8{*/
+    /*width:300px;*/
+    /*height:200px;*/
+/*}*/
+.detal-comment {
+    width: 700px;
+    overflow: hidden;
+    margin: 0px 0 0 0;
+}
+
+.detail-coment-send{
+    height:260px;
+     margin: 0 auto;
+}
+/*评论区域*/
+.comment-list li{
+    margin:20px 0px;
+    list-style:none;
+    padding-left:0px;
+    border-bottom:solid 1px #fff;
+    height:100px;
+}
+.comment-list .comment-detail img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+.comment-detail{
+    position:relative;
+}
+.comment-detail .comment_username{
+    position:absolute;
+    top:0px;
+    left:70px;
+    color:#fff;
+}
+
+.comment-detail .comment_content{
+    position:absolute;
+    top:55px;
+    left:70px;
+}
+.comment_time{
+    position:absolute;
+    right:5px;
+    top:3px;
+}
